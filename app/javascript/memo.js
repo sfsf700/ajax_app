@@ -14,7 +14,7 @@ const buildHTML = (XHR) => {
 
 function post (){
   const submit = document.getElementById("submit");  //getElementByIdメソッドで取得した投稿ボタンの要素を変数submitに格納
-  submit.addEventListener("click", (e) => { //(e)イベント発生時の情報を持ったオブジェクト
+  submit.addEventListener("click", (e) => { //(e)イベント発火、発生時の情報を持ったオブジェクト
     e.preventDefault(); //preventDefaultは既定のイベントを無効化するためのメソッド
     const form = document.getElementById("form"); //getElementByIdメソッドで取得したフォームの要素を変数formに格納
     const formData = new FormData(form); //新たに生成したFormDataオブジェクトを変数formDataに格納
